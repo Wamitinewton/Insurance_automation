@@ -44,7 +44,7 @@ class _SplashMainState extends State<SplashMain>
                   SizedBox(
                     height: height / 8,
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
@@ -62,7 +62,7 @@ class _SplashMainState extends State<SplashMain>
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Image.asset(
                     "assets/images/home.png",
                     width: width / 2,
@@ -82,19 +82,19 @@ class _SplashMainState extends State<SplashMain>
               height: height / 2.2,
               width: width,
               child: Column(children: [
-                Flexible(
+                const Flexible(
                     child: Text(
                   'Not Only Cover Yourself, your lovely \n family as well !',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: ThemeColor.textColorDark, fontSize: 18),
                 )),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Flexible(
+                const Flexible(
                     child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text(
                     'Lorem Ipsum is simply dummy \n text of the printing and typesetting industry. Lorem Ipsum has',
                     textAlign: TextAlign.center,
