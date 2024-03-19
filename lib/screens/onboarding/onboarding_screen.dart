@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile_insurance/constants/constants.dart';
 import 'package:mobile_insurance/models/onboarding_model.dart';
+import 'package:mobile_insurance/ui/custom_flat_button.dart';
 import 'package:mobile_insurance/utils/animated_widgets.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -116,8 +118,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
                   const Spacer(),
                   currentIndex == 2 ? Padding(padding: const EdgeInsets.symmetric(horizontal: 24),
-                  
-                  )
+                  child: CustomFlatButton(
+                    
+                    onTap: (){
+                      
+                    }, 
+                    
+                    text: 'Get started', 
+                    
+                    color: MyColors.kPrimaryColor, 
+                    
+                    textolor: Colors.white),
+                  ):
+                  Padding(padding: const EdgeInsets.symmetric(horizontal: 24))
                 ],
               ))
         ],

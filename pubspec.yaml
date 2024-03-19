@@ -43,6 +43,13 @@ dependencies:
   rive: ^0.13.0
   animated_flutter_widgets: ^0.0.2
   animate_do: ^3.3.4
+  get: ^4.6.6
+  http: ^1.2.1
+  dio: ^5.4.1
+  cookie_jar: ^4.0.8
+  dio_cookie_manager: ^3.1.1
+  flutter_easyloading: ^3.0.5
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:

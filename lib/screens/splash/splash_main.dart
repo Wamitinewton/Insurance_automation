@@ -1,5 +1,7 @@
 import 'package:clippy_flutter/arc.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:mobile_insurance/screens/auth/login/view.dart';
 import 'package:mobile_insurance/ui/shawdow_button.dart';
 import 'package:mobile_insurance/utils/theme_color.dart';
 
@@ -106,9 +108,9 @@ class _SplashMainState extends State<SplashMain>
                  padding: const EdgeInsets.symmetric(vertical : 30.0),
                  child: ShawdowButton(
                    width: width,
-                   text: "Login In",  
+                   text: "Authentication",  
                    onPressed: (){
-                     Navigator.push(context, MaterialPageRoute(builder: (_) => HomeMain()));
+                     Get.offAll(UserLoginScreen());
                    },               
                    ),
                )

@@ -45,30 +45,30 @@ class _HomeMainState extends State<HomeMain>
                 children: <Widget>[
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.menu,
                         color: Colors.white,
                       )),
-                  Spacer(),
-                  Icon(
+                  const Spacer(),
+                  const Icon(
                     Icons.local_florist,
                     color: Colors.amber,
                     size: 25,
                   ),
-                  SizedBox(width: 10),
-                  Text(
+                  const SizedBox(width: 10),
+                  const Text(
                     "thrifty",
                     style: TextStyle(
                         color: ThemeColor.textColorLight,
                         fontWeight: FontWeight.bold,
                         fontSize: 18),
                   ),
-                  Spacer(),
+                  const Spacer(),
                  
                       IconButton(
                       icon: Container(
                         width: 25,
-                        child: Stack(
+                        child: const Stack(
                    children :[Icon(
                           Icons.verified_user,
                           color: Colors.white,
@@ -105,7 +105,7 @@ class _HomeMainState extends State<HomeMain>
                             margin: EdgeInsets.only(top: height / 6),
                             color: ThemeColor.cardLight),
                         Container(
-                          padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                          padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
                           child: Column(
                               // padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
                               children: [
@@ -167,7 +167,7 @@ class _HomeMainState extends State<HomeMain>
                                 ),
                                 Container(
                                   height: height * 0.3,
-                                  margin: EdgeInsets.only(bottom: 10),
+                                  margin: const EdgeInsets.only(bottom: 10),
                                   child: ListView(
                                       scrollDirection: Axis.horizontal,
                                       children: offersData.map((e){
